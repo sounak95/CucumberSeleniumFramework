@@ -1,0 +1,288 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Retrieve weather details",
+        "description": "",
+        "id": "api-tests;retrieve-weather-details",
+        "after": [
+          {
+            "result": {
+              "duration": 119537,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDownAndScreenshotOnFailure(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 426071524,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I hit the correct weather endpoint",
+            "match": {
+              "location": "ApiTestSteps.i_enter_weather_end_point()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1540417506,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I request for the desired city",
+            "match": {
+              "location": "ApiTestSteps.i_enter_the_correct_city(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Hyderabad",
+                  "Kolkata",
+                  "Delhi"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1331129,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I validate the contentType header in the response recieved",
+            "match": {
+              "location": "ApiTestSteps.I_validate_the_contentType_header()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 40551,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I validate the serverType header in the response recieved",
+            "match": {
+              "location": "ApiTestSteps.I_validate_the_servercontentType_header()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@apitest1"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Register user",
+        "description": "",
+        "id": "api-tests;register-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 51834,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDownAndScreenshotOnFailure(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2252871,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I hit the correct user registration \"http://restapi.demoqa.com/customer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://restapi.demoqa.com/customer",
+                  "offset": 37
+                }
+              ],
+              "location": "ApiTestSteps.i_enter_the_correct_endpoint(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 57124,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I pass \"FirstName\" as \"Sounak6\" in request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "FirstName",
+                  "offset": 8
+                },
+                {
+                  "val": "Sounak6",
+                  "offset": 23
+                }
+              ],
+              "location": "ApiTestSteps.i_enter(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28914,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I pass \"LastName\" as \"Saha6\" in request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "LastName",
+                  "offset": 8
+                },
+                {
+                  "val": "Saha6",
+                  "offset": 22
+                }
+              ],
+              "location": "ApiTestSteps.i_enter(String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35614,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I pass \"UserName\" as \"sounak84\" in request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UserName",
+                  "offset": 8
+                },
+                {
+                  "val": "sounak84",
+                  "offset": 22
+                }
+              ],
+              "location": "ApiTestSteps.i_enter(String,String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31383,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I pass \"Password\" as \"sounakss6\" in request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 8
+                },
+                {
+                  "val": "sounakss6",
+                  "offset": 22
+                }
+              ],
+              "location": "ApiTestSteps.i_enter(String,String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31382,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I pass \"Email\" as \"sounak73@gmail.com\" in request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Email",
+                  "offset": 8
+                },
+                {
+                  "val": "sounak73@gmail.com",
+                  "offset": 19
+                }
+              ],
+              "location": "ApiTestSteps.i_enter(String,String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 960545315,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Validate Success Response",
+            "match": {
+              "location": "ApiTestSteps.validate_success_response()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@apitests"
+          }
+        ]
+      }
+    ],
+    "name": "API Tests",
+    "description": "",
+    "id": "api-tests",
+    "keyword": "Feature",
+    "uri": "ApiTest.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@apitests"
+      }
+    ]
+  }
+]
